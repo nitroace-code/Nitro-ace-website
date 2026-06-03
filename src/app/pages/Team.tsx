@@ -1,7 +1,7 @@
 export function Team() {
   const leadership = [
     {
-      name: "Manikanta Kalumuri",
+      name: "V Vishnu Vardhan  ",
       role: "Team Principal",
       major: "Mechanical Engineering",
       year: "Senior",
