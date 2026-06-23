@@ -1,20 +1,20 @@
 export function Team() {
   const leadership = [
     {
-      name: "V Vishnu Vardhan  ",
+      name: "Vishnu Vardhan V  ",
       role: "Team Principal",
       major: "Mechanical Engineering",
       year: "Senior",
     },
     {
-      name: "Rishi Chandra Kanneboina ",
+      name: "Prashanth Raj M ",
       role: "Mechanical Tech Director",
       major: "Mechanical Engineering",
       year: "Senior",
     },
     {
-      name: "Neckanti Kiran",
-      role: "Business Manager",
+      name: "Beram Raj kumar",
+      role: "Mechanical Tech Director",
       major: "Mechanical Engineering",
       year: "Senior",
     },
@@ -25,20 +25,20 @@ export function Team() {
       year: "Junior",
     },
     {
-      name: "M Prashanth Raj",
-      role: "Chassis Engineer",
+      name: "Perugu Rahul",
+      role: "Website Engineer",
+      major: "Artificial Intelligence and Machine Learning",
+      year: "Junior",
+    },
+    {
+      name: "Praful P Deshpande",
+      role: "Sponsorship Coordinator",
       major: "Mechanical Engineering",
       year: "Junior",
     },
     {
-      name: "B Rajkumar",
-      role: "Chassis Engineer",
-      major: "Mechanical Engineering",
-      year: "Junior",
-    },
-    {
-      name: "V Vishnu Vardhan",
-      role: "Breaking Engineer",
+      name: "Nihaal Chowdary Aachanta",
+      role: "Documentation Specialist",
       major: "Mechanical Engineering",
       year: "Junior",
     },
@@ -49,9 +49,9 @@ export function Team() {
       year: "Junior",
     },
     {
-      name: "P Rahul",
-      role: "Senior Administrative Operator",
-      major: "Artificial Intelligence and Machine Learning",
+      name: "Harshith Rajababu Kamtam",
+      role: "Social Media Manager",
+      major: "Mechanical Engineering",
       year: "Junior",
     },
     {
@@ -61,47 +61,12 @@ export function Team() {
       year: "Junior",
     },
     {
-      name: "J Nohith Kumar",
-      role: "Senior Structual Engineer",
-      major: "Mechanical Engineering",
-      year: "Senior",
-    },
-    {
-      name: "A Nihaal Chowdary",
-      role: "Junior Powertrain Operator",
-      major: "Mechanical Engineering",
-      year: "Sophomore",
-    },
-    {
-      name: "Praful P Deshpande",
-      role: "Junior Marketing Executive",
-      major: "Mechanical Engineering",
-      year: "Sophomore",
-    },
-    {
-      name: "Vinay Datta",
-      role: "Junior Breaking Engineer",
-      major: "Mechanical Engineering",
-      year: "Sophomore",
-    },
-    {
-      name: "Jagruthi Reddy",
-      role: "Junior Electrical Engineer",
-      major: "Electrical and Electronics Engineering",
-      year: "Sophomore",
-    },
-    {
       name: "Chris James Philip",
       role: "Junior powertrain Engineer",
       major: "Mechanical Engineering",
       year: "Freshman",
     },
-    {
-      name: "Harshith Kamtam",
-      role: "Junior Chassis Engineer",
-      major: "Mechanical Engineering",
-      year: "Freshman",
-    },
+
     {
       name: "Reeti Mukherjee",
       role: "Faculty Coordinator",
@@ -110,6 +75,14 @@ export function Team() {
       name: "Y V Raghu Vamsi",
       role: "Exective Board Member",
         },
+        {
+          name: "Manikanta Kalumri",
+          Role: "External Advisor"
+        }
+        {
+          Name: "Rishi Chandra Kanneboina",
+          Role: "External Advisor", 
+        }
   ];
 
   const departments = [
@@ -121,31 +94,31 @@ export function Team() {
     },
     {
       name: "Chassis & Suspension",
-      lead: "B Rajkumar",
+      lead: "Prashanth Raj M",
       members: 5,
       description: "Frame design, suspension geometry, and handling",
     },
     {
       name: "Aerodynamics",
-      lead: "Manikanta",
+      lead: "D Srujan",
       members: 4,
       description: "Wings, diffusers, and computational fluid dynamics",
     },
     {
       name: "Electronics",
-      lead: "Manikanta",
+      lead: "Harshith",
       members: 3,
       description: "Data acquisition, telemetry, and control systems",
     },
     {
       name: "Manufacturing",
-      lead: "Rishi Chandra",
+      lead: "Prashanth Raj",
       members: 10,
       description: "Fabrication, machining, and composite work",
     },
     {
       name: "Business & Marketing",
-      lead: "N Kiran",
+      lead: "Praful P Deshpande",
       members: 4,
       description: "Sponsorships, outreach, and team promotion",
     },
