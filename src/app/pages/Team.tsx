@@ -66,7 +66,6 @@ export function Team() {
       major: "Mechanical Engineering",
       year: "Freshman",
     },
-
     {
       name: "Reeti Mukherjee",
       role: "Faculty Coordinator",
@@ -75,14 +74,14 @@ export function Team() {
       name: "Y V Raghu Vamsi",
       role: "Exective Board Member",
         },
-        {
-          name: "Manikanta Kalumri",
-          Role: "External Advisor"
-        }
-        {
-          Name: "Rishi Chandra Kanneboina",
-          Role: "External Advisor", 
-        }
+    {
+  name: "Manikanta Kalumuri",
+  role: "External Advisor"
+       },
+    {
+  name: "Rishi Chandra Kanneboina",
+  role: "External Advisor"
+       }
   ];
 
   const departments = [
