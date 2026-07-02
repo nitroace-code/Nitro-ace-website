@@ -159,7 +159,7 @@ export function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
           {/* Contact Form */}
-          <div class="invisible">
+          <div className="">
             <h2 className="text-3xl text-white mb-6">Join Our Team</h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
