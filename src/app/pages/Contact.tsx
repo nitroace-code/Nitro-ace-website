@@ -106,25 +106,24 @@ export function Contact() {
       });
 
       if (selectedFile) {
-        payload.append("resume", selectedFile);
+        //payload.append("resume", selectedFile);
       }
 
       // Pointing to your PHP script on cPanel
-      const response = await fetch("/submit.php", {
-        method: "POST",
-        body: payload,
-      });
+      const response = await fetch(
+"https://script.google.com/macros/s/AKfycbxjeh5HTMMCWATBH_sv_G4z20iO_2OIzwMqlvh7o-_LbnIivxfsUEz-G6VIqG8qUtwgFw/exec",
+        {
+    method: "POST",
+    body: payload,
+  }
+      );
 
-      const result = await response.json();
+setStatus({
+  type: "success",
+  message: "Application submitted successfully! We'll review your application and contact you soon.",
+});
 
-      if (result.status === "error") throw new Error(result.message);
-
-      setStatus({
-        type: "success",
-        message: "Application submitted successfully! We'll review your application and contact you soon.",
-      });
-
-      setFormData({ name: "", email: "", mobile: "", major: "", year: "", message: "", cars: "" });
+        setFormData({ name: "", email: "", mobile: "", major: "", year: "", message: "", cars: "" });
       setSelectedFile(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
       
@@ -162,7 +161,7 @@ export function Contact() {
           <div className="">
             <h2 className="text-3xl text-white mb-6">Join Our Team</h2>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="hidden">
               {Object.entries(urlParams).map(([key, value]) => (
                 <input key={key} type="hidden" name={key} value={value} />
               ))}
@@ -255,6 +254,36 @@ export function Contact() {
                 {isSubmitting ? "Submitting..." : "Submit Application"}
               </button>
             </form>
+            <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-8 text-center shadow-lg">
+
+  <h3 className="text-3xl font-bold text-white mb-6">
+    🚀 Join Team NITRO
+  </h3>
+
+  <p className="text-zinc-300 text-lg leading-8 mb-8">
+    Thank you for your interest in joining <span className="text-red-500 font-semibold">Team NITRO</span>.
+    <br /><br />
+    We are always looking for passionate, innovative, and dedicated students to be part of our Formula Student Racing Team.
+    <br /><br />
+    <span className="text-white font-semibold">
+      Click the link below to fill out the application form and become a member of Team NITRO.
+    </span>
+  </p>
+
+  <a
+    href="https://forms.gle/KNvaWLnEKvZyYcwY6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-red-600 hover:bg-red-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition duration-300"
+  >
+    📝 Click Here to Fill the Application Form
+  </a>
+
+  <p className="text-zinc-500 mt-6">
+    The application form will open in a new tab.
+  </p>
+
+</div>
           </div>
 
           {/* Contact Info */}
